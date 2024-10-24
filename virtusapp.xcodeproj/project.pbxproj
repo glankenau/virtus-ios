@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		ED5276072CC8F71A00445ED2 /* HotwireNative in Frameworks */ = {isa = PBXBuildFile; productRef = ED5276062CC8F71A00445ED2 /* HotwireNative */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EDF08A672CC84B4600CC8B17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5276072CC8F71A00445ED2 /* HotwireNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = virtusapp;
 			packageProductDependencies = (
+				ED5276062CC8F71A00445ED2 /* HotwireNative */,
 			);
 			productName = virtusapp;
 			productReference = EDF08A502CC84B4400CC8B17 /* virtusapp.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = EDF08A472CC84B4400CC8B17;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				ED5276052CC8F71A00445ED2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EDF08A512CC84B4400CC8B17 /* Products */;
 			projectDirPath = "";
@@ -563,6 +572,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ED5276052CC8F71A00445ED2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/hotwire-native-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ED5276062CC8F71A00445ED2 /* HotwireNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED5276052CC8F71A00445ED2 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */;
+			productName = HotwireNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EDF08A482CC84B4400CC8B17 /* Project object */;
 }
